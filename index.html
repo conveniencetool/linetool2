@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>LINEリンク変換ツール</h1>
-    <p>LINE招待リンクをカスタム形式に変換します。</p>
-    
-    <input type="text" id="originalLink" placeholder="LINE招待リンクをここに貼り付け" size="50">
-    <br>
-    <select id="linkType">
-        <option value="report">通報リンク (Report)</option>
-        <option value="join">参加リンク (Join)</option>
-    </select>
-    <button onclick="convertLink()">変換</button>
+    <div class="container">
+        <h1>LINEリンク変換ツール</h1>
+        <p>LINE招待リンクをカスタム形式に変換します。</p>
+        
+        <input type="text" id="originalLink" placeholder="LINE招待リンクをここに貼り付け">
+        <br>
+        <select id="linkType">
+            <option value="report">通報リンク (Report)</option>
+            <option value="join">参加リンク (Join)</option>
+        </select>
+        <button onclick="convertLink()">変換</button>
 
-    <h3>変換後のリンク:</h3>
-    <p id="convertedLink" class="output"></p>
+        <h3>変換後のリンク:</h3>
+        <p id="convertedLink" class="output"></p>
 
-    <p class="disclaimer">※このツールの使用は自己責任でお願いいたします。リンクの使用によるトラブルや損害について、開発者は一切の責任を負いません。</p>
+        <p class="disclaimer">※このツールの使用は自己責任でお願いいたします。リンクの使用によるトラブルや損害について、開発者は一切の責任を負いません。</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
