@@ -1,7 +1,7 @@
 function convertLink() {
     const originalLink = document.getElementById('originalLink').value;
     const linkType = document.getElementById('linkType').value;
-    const regex = /ticket=([^&]+)/;
+    const regex = /g2\/([a-zA-Z0-9_-]+)/;
     const match = originalLink.match(regex);
 
     if (match && match[1]) {
